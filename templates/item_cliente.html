@@ -1,0 +1,9 @@
+<tr>
+    <th scope="row">{{ cliente.id}}</th>
+    <td>{{ cliente.nome }}</td>
+    <td>{{ cliente.email }}</td>
+    <td>
+        <button class="btn btn-primary" onclick="location.href='/clientes/{{ cliente.id }}'">Detalhes</button>
+        <button class="btn btn-secondary" onclick="location.href='/clientes/editar/{{ cliente.id }}'">Editar</button>
+    </td>
+</tr>
